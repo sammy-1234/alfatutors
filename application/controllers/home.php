@@ -10,8 +10,8 @@ class Home extends CI_Controller
 		$data="";
 		$grade= $this->input->post('grade');
 		$subject= $this->input->post('subject');
+      $category = $this->input->post('category');
 		$location= $this->input->post('location');
-		$category = $this->input->post('category');
       $daysdata = $this->input->post('dayselection');
 		$timings= $this->input->post('timings');
 
@@ -117,7 +117,7 @@ class Home extends CI_Controller
          'data'=>$data
          ));
    }
-//-----------for individual links to particular subjects------
+//-----------for individual links to particular subjects on index.php------
    public function subject($choice='')
    {
       

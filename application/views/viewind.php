@@ -36,11 +36,11 @@ for($j=0,$subjectcounter=count($subjectvar);$j<$subjectcounter;$j++)
 }
 ?>
 <a id="header" href="<?php echo "http://localhost/CodeIgniter-3.0.6/index.php/home/show/".$data[$i]['id']."/".$string?>">
-<img src="<?php echo base_url().$data[$i]['img'];?>" height="200px" class="img-responsive img-rounded">
 <h2 class="list-group-item" id="header">
 <?php echo $data[$i]['name']?></h2></a>
 <h4 class="list-group-item">Subjects :<small><?php echo $data[$i]['subjects']?></small></h4>
 <h4 class="list-group-item">Class : <small><?php echo $data[$i]['class']?></small></h4>
+<h4 class="list-group-item">Experience : <small><?php echo $data[$i]['experience']?></small></h4>
 </li>
 <?php endfor?>
 </ul>
@@ -62,6 +62,7 @@ for($j=0,$subjectcounter=count($subjectvar);$j<$subjectcounter;$j++)
 <hr>
 <div class="list-group-item"><h5 class="list-group-heading"><b>CLASS : </b></h5><p class="list-group-item-text"><?php echo $tutor[0]['class']?></p></div>
 <div class="list-group-item"><h5 class="list-group-heading"><b>SUBJECTS :</b></h5><p class="list-group-item-text"><?php echo $tutor[0]['subjects']?></p></div>
+<div class="list-group-item"><h5 class="list-group-heading"><b>EXPERIENCE :</b></h5><p class="list-group-item-text"><?php echo $tutor[0]['experience']?></p></div>
 <div class="list-group-item"><h5 class="list-group-heading"><b>TARGET LEVEL :</b></h5><p class="list-group-item-text"><?php echo $tutor[0]['target']?></p></div>
 <div class="list-group-item"><h5 class="list-group-heading"><b>CONTACT : </b></h5><p class="list-group-item-text"><?php echo $tutor[0]['conact']?></p></div>
 <hr>

@@ -107,8 +107,15 @@
     </div>
 
     <div class="w3-display-container mySlides" style="margin-left:40px">
-    <div class="col-md-3 col-xs-12">
-    <a href="home/subject/Physics"><img class ="img-rounded" src="images/page1physicss.svg" height="100px"></a>
+   <div class="col-md-3 col-xs-12 subject-block">
+      <a href="home/subject/Computer" class="subject-link">
+        <div class="subject-block w3-display-container">
+          <img src="images/computer.png" class="img-rounded subject-img">
+          <div class="w3-display-bottomleft w3-container w3-black subject-txt">
+          Computer Science
+          </div>
+        </div>
+      </a>
     </div>
     <div class="col-xs-3">
     <a href="home/subject/Maths"><img class="img-rounded" src="images/page1maths.svg" height="100px"></a>

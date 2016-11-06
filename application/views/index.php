@@ -8,9 +8,9 @@
 </head>
 
 <body>
-  
+
 <?php $this->view('topbar'); ?>
-  
+
 <div class="container-fluid" id="section4">
 
   <div class="hero-t">
@@ -18,7 +18,7 @@
     <h6>Study at your own pace, at your own time</h6>
   </div>
 
-  <div class="tabs tabs-reasons tabs-circle-top tab-container">   
+  <div class="tabs tabs-reasons tabs-circle-top tab-container">
     <ul class="etabs text-center">
       <li class="tab">
         <a href="#tab-1" data-toggle="modal" data-target="#what">
@@ -43,7 +43,7 @@
         <div>4</div>
         When?</a>
       </li>
-                 
+
       <?php echo form_open('home/submit');?>
       <li class="tab" style="cursor: pointer;">
         <a id="goclass">
@@ -58,7 +58,7 @@
 
 <div class="subject-list">
   <!--links sections to particular subjects-->
-  <span style="text-align:center;"><h2>Choose Your Subjects</h2></span> 
+  <span style="text-align:center;"><h2>Choose Your Subjects</h2></span>
     <div class="container-fluid w3-content w3-display-container" id="subjectlinks">
     <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
 
@@ -161,8 +161,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-  //slider ends
-
+  //slider ends here
 
 </script>
 </body>

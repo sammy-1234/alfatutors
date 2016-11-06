@@ -36,11 +36,19 @@
             <p>Location : <?php echo $data[$i]['location']?></p>
             <p>Category : <?php echo $data[$i]['category']?></p>
             </div>
+            <div class="col-xs-2">
+            <p> <?php echo $data[$i]['experience'] ?> years Experience</p>
+            </div>
           </a>
       </div>
       <div class="row">
-          <p>Fees : <?php echo $data[$i]['fees']?></p>
-      </div>
+         <div class="col-xs-5">
+         <p>immunity score</p>
+         </div>
+         <div class="col-xs-5">
+            <p>Fees : <?php echo $data[$i]['fees']?></p>
+          </div>
+        </div>
     </div>
     <?php endfor?>
   </div>

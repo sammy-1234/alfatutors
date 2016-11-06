@@ -7,32 +7,45 @@ var options;
           $("[name='stream']").show();
           $("#streamselection").show();
           $("[name='stream']").change(function(){
-           if(document.getElementsByName("stream")[0].value==='science')
+           if(document.getElementsByName("stream")[0].value==='Science')
            {
-                options = {"Physics":"Physics",
+                options = {
+                    "Physics":"Physics",
                     "Chemistry" : "Chemistry",
-                      "Biology":"Biology",
-                       "Maths":"Maths",
-                        "English":"English"
+                    "Biology":"Biology",
+                    "Maths":"Maths",
+                    "English":"English"
                               };
            }
-           else if(document.getElementsByName("stream")[0].value==='commerce')
+           else if(document.getElementsByName("stream")[0].value==='Commerce')
            {
-                options = {"Bussiness Studies":"Bussiness Studies",
-                "Accounts":"Accounts",
-                "Economics":"Economics",
-                "Maths":"Maths",
-                "English":"English"
-                        };
+                options = {
+                  "Bussiness Studies":"Bussiness Studies",
+                  "Accounts":"Accounts",
+                  "Economics":"Economics",
+                  "Maths":"Maths",
+                  "English":"English"
+                          };
             }
-          else
+          else if(document.getElementsByName("stream")[0].value==='Humanities')
           {
               options = {
                 "Legal Studies":"Legal Studies",
-                  "Political Science":"Political Science",
-                  "History":"History",
-                   "Psycology":"Psycology"
+                "Political Science":"Political Science",
+                "History":"History",
+                "Psycology":"Psycology"
                       };
+          }
+
+          else
+          {
+              options = {
+                 "English":"English",
+                 "Hindi":"Hindi",
+                 "Science":"Science",
+                 "Maths":"Maths",
+                 "SST":"SST"
+              }
           }
            
            
@@ -52,9 +65,28 @@ var options;
           //nothing happens for 9th and 10th
           $("[name='stream']").hide();
           $("#streamselection").hide();
+
+           options = {
+                 "English":"English",
+                 "Hindi":"Hindi",
+                 "Science":"Science",
+                 "Maths":"Maths",
+                 "SST":"SST"
+              }
+
+                //changing elements
+             {
+                var $el = $("[name='subject']");
+                $el.empty(); // remove old options
+                $.each(options, function(value,key) {
+                       $el.append($("<option></option>")
+                        .attr("value", value).text(key));
+                        });
+              }
          }
 
     });
+    //modal js ends here
     $("[href='#tab-5']").click(function(){
      document.getElementById('myform').submit();
     });

@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-  <title>Alfa Tutors - Best Tutors at one click!</title>
+  <title>Alfa Tutors - Best Tutors in Delhi, Maths, Science, Commerce Tutors</title>
   <?php $this->view('header') ?>
   <script src="js/home.js"></script>
+  <meta name="description" content="Alfa Tutors is the one stop solution to finding the best tutors in your locality. Be it Maths, Science, Commerce or Humanities - we connect students with the perfect tutors.">
 </head>
 
 <body>
-  
+
 <?php $this->view('topbar'); ?>
-  
+
 <div class="container-fluid" id="section4">
 
   <div class="hero-t">
@@ -18,7 +19,7 @@
     <h6>Study at your own pace, at your own time</h6>
   </div>
 
-  <div class="tabs tabs-reasons tabs-circle-top tab-container">   
+  <div class="tabs tabs-reasons tabs-circle-top tab-container">
     <ul class="etabs text-center">
       <li class="tab">
         <a href="#tab-1" data-toggle="modal" data-target="#what">
@@ -43,7 +44,7 @@
         <div>4</div>
         When?</a>
       </li>
-                 
+
       <?php echo form_open('home/submit');?>
       <li class="tab" style="cursor: pointer;">
         <a id="goclass">
@@ -58,7 +59,7 @@
 
 <div class="subject-list">
   <!--links sections to particular subjects-->
-  <span style="text-align:center;"><h2>Choose Your Subjects</h2></span> 
+  <span style="text-align:center;"><h2>Choose Your Subjects</h2></span>
     <div class="container-fluid w3-content w3-display-container" id="subjectlinks">
     <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
 
@@ -135,9 +136,9 @@
 <a id="about"></a>
 <div class="about container-fluid">
   <h3>About Us</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod risus vitae rhoncus feugiat. Praesent maximus, sapien vel ultrices bibendum, ipsum ex semper eros, sit amet aliquet arcu enim ut erat. Nulla tempor est tellus, vel bibendum diam molestie ut. Suspendisse vulputate, purus eu consequat tempus, metus urna eleifend velit, id dignissim ante odio a nisl. Morbi luctus gravida pretium.</p>
+  <p>Alfa Tutors is the one stop solution to finding the best tutors in your locality. In the vast market of tuition centres, Alfa Tutors is the one place where you can find credible tutors. We provide complete information about the tutors, including student reviews, experience, past results and qualifications. With over 100 tutors from Delhi, Alfa Tutors connects students and tutors.</p>
 
-  <p>Duis consectetur sed nulla vitae maximus. Suspendisse lacinia magna eu dolor posuere tempus. Sed odio nunc, faucibus et est ac, pharetra dignissim massa. Vivamus viverra libero dolor, ac scelerisque massa cursus sit amet. Fusce vestibulum sagittis dui eu egestas. Donec tortor orci, tincidunt et lorem porttitor, facilisis placerat ligula. Pellentesque et arcu eu ipsum hendrerit venenatis. Suspendisse dapibus pharetra ultricies. Praesent vel libero consequat, scelerisque orci sed, semper ipsum.</p>
+  <p>Alfa Tutors provides a student complete information about a tuition centre - what do they teach (Maths, Chemistry, Physics, Commerce, Computer Science), where, timings, category (home tutor, online, small group and classroom size), level of teaching (CBSE, IIT JEE, Olympiads) and how they teach. We even sort the tutors as per the fee structure and all other details a student wants to know including past results and reviews. Allowing you to study effectively and get the desired results.</p>
 </div>
 
 <?php $this->view('footer') ?>
@@ -161,8 +162,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-  //slider ends
-
+  //slider ends here
 
 </script>
 </body>

@@ -48,7 +48,7 @@
               <p>Class : <?php echo $data[$i]['class']?></p>
             </div>
             <div class= "col-xs-5">
-            <p><?php echo $data[$i]['target']?></p>
+            <p>Target : <?php echo $data[$i]['target']?></p>
             <p>Location : <?php echo $data[$i]['location']?></p>
             <p>Category : <?php echo $data[$i]['category']?></p>
             </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Alfa Tutors - Best Tutors in Delhi, Maths, Science, Commerce Tutors</title>
+  <title>Alfa Tutors - Maths, Science, Commerce Tutors in Delhi</title>
   <?php $this->view('header') ?>
   <script src="js/home.js"></script>
   <meta name="description" content="Alfa Tutors is the one stop solution to finding the best tutors in your locality. Be it Maths, Science, Commerce or Humanities - we connect students with the perfect tutors.">
@@ -61,75 +61,65 @@
   <!--links sections to particular subjects-->
   <span style="text-align:center;"><h2>Choose Your Subjects</h2></span>
     <div class="container-fluid w3-content w3-display-container" id="subjectlinks">
-    <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+      <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
 
 
-    <div class="w3-display-container mySlides" style="margin-left:40px">
-    <div class="col-md-3 col-xs-12 subject-block">
-      <a href="home/subject/Chemistry" class="subject-link">
-        <div class="subject-block w3-display-container">
-          <img src="images/chemistry.png" class="img-rounded subject-img">
-          <div class="w3-display-bottomleft w3-container w3-black subject-txt">
-          Chemistry
+      <div class="w3-display-container mySlides" style="margin-left:40px">
+      <div class="col-md-3 col-xs-12 subject-block">
+        <a href="home/subject/Chemistry" class="subject-link">
+          <div class="subject-block w3-display-container">
+            <img src="images/chemistry.png" class="img-rounded subject-img">
+            <div class="w3-display-bottomleft w3-container w3-black subject-txt">
+            Chemistry
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-3 col-xs-12 subject-block">
-      <a href="home/subject/Maths" class="subject-link">
-        <div class="subject-block w3-display-container">
-          <img src="images/maths.png" class="img-rounded subject-img">
-          <div class="w3-display-bottomleft w3-container w3-black subject-txt">
-          Maths
+        </a>
+      </div>
+      <div class="col-md-3 col-xs-12 subject-block">
+        <a href="home/subject/Maths" class="subject-link">
+          <div class="subject-block w3-display-container">
+            <img src="images/maths.png" class="img-rounded subject-img">
+            <div class="w3-display-bottomleft w3-container w3-black subject-txt">
+            Maths
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-3 col-xs-12 subject-block">
-      <a href="home/subject/English" class="subject-link">
-        <div class="subject-block w3-display-container">
-          <img src="images/english.png" class="img-rounded subject-img">
-          <div class="w3-display-bottomleft w3-container w3-black subject-txt">
-          English
+        </a>
+      </div>
+      <div class="col-md-3 col-xs-12 subject-block">
+        <a href="home/subject/English" class="subject-link">
+          <div class="subject-block w3-display-container">
+            <img src="images/english.png" class="img-rounded subject-img">
+            <div class="w3-display-bottomleft w3-container w3-black subject-txt">
+            English
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-3 col-xs-12 subject-block">
-       <a href="home/subject/Physics" class="subject-link">
-        <div class="subject-block w3-display-container">
-          <img src="images/physics.png" class="img-rounded subject-img">
-          <div class="w3-display-bottomleft w3-container w3-black subject-txt">
-          Physics
+        </a>
+      </div>
+      <div class="col-md-3 col-xs-12 subject-block">
+         <a href="home/subject/Physics" class="subject-link">
+          <div class="subject-block w3-display-container">
+            <img src="images/physics.png" class="img-rounded subject-img">
+            <div class="w3-display-bottomleft w3-container w3-black subject-txt">
+            Physics
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-    </div>
+        </a>
+      </div>
+      </div>
 
-    <div class="w3-display-container mySlides" style="margin-left:40px">
-   <div class="col-md-3 col-xs-12 subject-block">
-      <a href="home/subject/Computer" class="subject-link">
-        <div class="subject-block w3-display-container">
-          <img src="images/computer.png" class="img-rounded subject-img">
-          <div class="w3-display-bottomleft w3-container w3-black subject-txt">
-          Computer Science
-          </div>
+      <div class="w3-display-container mySlides" style="margin-left:40px">
+        <div class="col-md-3 col-xs-12 subject-block">
+          <a href="home/subject/Computer" class="subject-link">
+            <div class="subject-block w3-display-container">
+              <img src="images/computer.png" class="img-rounded subject-img">
+              <div class="w3-display-bottomleft w3-container w3-black subject-txt">
+              Computer Science
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-    <div class="col-xs-3">
-    <a href="home/subject/Maths"><img class="img-rounded" src="images/page1maths.svg" height="100px"></a>
-    </div>
-    <div class="col-xs-3">
-    <a href="home/subject/Chemistry"><img class="img-rounded" src="images/page1chemistry.svg" height="100px" ></a>
-    </div>
-    <div class="col-xs-3">
-    <a href="home/subject/Maths"><img class ="img-rounded" src="images/page1chemistry.svg" height="100px"></a>
-    </div>
-    </div>
-
-    <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+      </div>
+      <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
     </div>
 </div>
 

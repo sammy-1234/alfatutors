@@ -22,12 +22,17 @@
       foreach ($subjectvar as $cSubject){
         if ($cSubject === 'Maths')
           $iconSub[$k] = 'fa-cube';
+        else if ($cSubject == 'Chemistry' || $cSubject == 'Physics' || $cSubject == 'Biology' || $cSubject == 'Science')
+          $iconSub[$k] = 'fa-flask';
+        else
+          $iconSub[$k] = 'fa-book';
         $k++;
       }
 
       $imgIdent = $subjectvar[0];
     ?>
     <div class="view-item">
+
       <div class="row">
           <a class="view-href" href="<?php echo "/home/show/".$data[$i]['id']."/".$string?>">
             <div class="col-xs-12">
@@ -57,14 +62,16 @@
             </div>
           </a>
       </div>
-      <div class="row">
+      <div class="row view-row">
          <div class="col-xs-5">
-         <p>immunity score</p>
+           <span class="view-score">89</span>
          </div>
          <div class="col-xs-5">
             <p>Fees : <?php echo $data[$i]['fees']?></p>
           </div>
         </div>
+        <!-- view item end -->
+
     </div>
     <?php endfor?>
   </div>

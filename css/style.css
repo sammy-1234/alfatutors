@@ -350,23 +350,35 @@ footer {
 }
 
 .view-item {
-  border: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px 0 0 0;
 }
 
-.view-all .view-item {
-  margin: 10px 0;
+.view-href:hover {
+  color: #000;
 }
 
 .view-href {
   text-decoration: none;
 }
 
+.view-row {
+  background: #bdc3c7;
+}
+
 .view-href:hover .view-img {
   opacity: 1;
 }
 
-.view-all {
+.view-all, .view-ind {
   max-width: 900px;
   padding: 0 0;
-  margin: 70px auto;
+  margin: 90px auto;
 }
+
+.view-all .row {
+  margin: 0;
+}
+
+/* View Indivisual */

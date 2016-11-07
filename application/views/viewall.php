@@ -17,18 +17,34 @@
       }
       // For URL
 
+      $iconSub = array(count($subjectvar));
+      $k = 0;
+      foreach ($subjectvar as $cSubject){
+        if ($cSubject === 'Maths')
+          $iconSub[$k] = 'fa-cube';
+        $k++;
+      }
+
       $imgIdent = $subjectvar[0];
     ?>
     <div class="view-item">
       <div class="row">
           <a class="view-href" href="<?php echo "/home/show/".$data[$i]['id']."/".$string?>">
-            <div class="col-xs-2">
-
-              <img src="/images/<?php echo strtolower($imgIdent) ?>.png" class="img-responsive view-img">
+            <div class="col-xs-12">
+              <h5 class="view-header"><?php echo strtolower($data[$i]['name'])?></h5>
             </div>
-            <div class="col-xs-5"> 
-              <h3 id="header"><?php echo $data[$i]['name']?></h3>
-              <p>Subjects : <?php echo $data[$i]['subjects']?></p>
+            <div class="col-xs-5">
+              <p>
+                <?php
+                  $k = 0;
+                  foreach ($subjectvar as $cSubject) {
+                ?>
+                  <i class="fa <?php echo $iconSub[$k] ?>" aria-hidden="true"></i> <?php echo $cSubject?>
+                <?php
+                  $k++;
+                  }
+                  // Ending for loop ?>
+              </p>
               <p>Class : <?php echo $data[$i]['class']?></p>
             </div>
             <div class= "col-xs-5">

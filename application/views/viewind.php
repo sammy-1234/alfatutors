@@ -7,6 +7,9 @@
 <body>
 
   <?php $this->view('topbar'); ?>
+
+  <div class="top-clear"></div>
+
   <div class="container-fluid view-ind">
     <div class="row">
       <div class="col-xs-12">

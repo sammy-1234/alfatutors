@@ -52,7 +52,7 @@
     <div class="row">
       <div class="col-xs-12" style="background-color:#bdc3c7"><h2><b>STUDENT REVIEWS : </b></h2></div>
       <p><?php echo $tutor[0]['reviews']?></p>
-      </div>
+    </div>
 
       <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#add-review">Add Review</button>
         <form class="form-inline" id="student_review">

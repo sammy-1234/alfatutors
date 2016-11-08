@@ -10,16 +10,16 @@ class Home extends CI_Controller
 		$data="";
 		$grade= $this->input->post('grade');
 		$subject= $this->input->post('subject');
-      $category = $this->input->post('category');
+    $category = $this->input->post('category');
 		$location= $this->input->post('location');
-      $daysdata = $this->input->post('dayselection');
+    $daysdata = $this->input->post('dayselection');
 		$timings= $this->input->post('timings');
 
         $counter = array();
          $q = $this->db->get('filters')->result_array();
          if(!empty($q))
          {
-         foreach ($q as $row ) {
+         foreach ($q as $row) {
             $counter[$row['id']]=0;
 
             $classesvar = explode(',', $row['class']);
@@ -28,28 +28,28 @@ class Home extends CI_Controller
             $locationvar = explode(',', $row['location']);
 
 
-         	if(in_array($grade,$classesvar))   //class
+         	if(in_array($grade,$classesvar))   // If searched grade available in this row
          	   $counter[$row['id']]++;
 
-         	if(in_array($subject,$subjectsvar))    //subjects
+         	if(in_array($subject,$subjectsvar))    // searched subjects
          		$counter[$row['id']] += 7;
 
-         	if($category === $row['category'])     //category
+         	if($category === $row['category'])     // category
          		$counter[$row['id']]++;
 
-            if(in_array($location,$locationvar))     //location
-               $counter[$row['id']]+=3;
+          if(in_array($location,$locationvar))     // location
+             $counter[$row['id']]+=3;
 
-            if(!empty($daysdata))
-            {
-            foreach ($daysdata as $dayselected) {     //days
-               if(in_array($dayselected,$daysvar))
-               {
-                  $counter[$row['id']]++;
-               }
-               else if($row['days']==='All Days')
-                 $counter[$row['id']]++;
-            }
+          if(!empty($daysdata))
+          {
+          foreach ($daysdata as $dayselected) {     // days
+             if(in_array($dayselected,$daysvar))
+             {
+                $counter[$row['id']]++;
+             }
+             else if($row['days']==='All Days')
+               $counter[$row['id']]++;
+          }
          }
 
          	if($timings === $row['timings'] || $row['timings']==='Any Time between 9 AM to 9 PM')   //timings
@@ -84,7 +84,7 @@ class Home extends CI_Controller
    public function show($id=-1,$choice='')
    {
 
-     
+
       $data="";
       $counter = array();
          $q = $this->db->get('filters')->result_array();
@@ -120,7 +120,7 @@ class Home extends CI_Controller
 //-----------for individual links to particular subjects on index.php------
    public function subject($choice='')
    {
-      
+
     $data="";
       $counter = array();
          $q = $this->db->get('filters')->result_array();

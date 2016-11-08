@@ -139,11 +139,11 @@
         <div class="modal-body">
         <!-- selecting location-->
             <?php $locationoptions= array(
-             'GK-2'=>'GK-2',
-             'CR-PARK'=>'CR-PARK',
-             'KALKAJI'=>'KALKAJI',
-             'GOVIND-PURI'=>'GOVIND-PURI',
-             'ALAKNANDA'=>'ALAKNANDA'
+             'Greater Kailash 2'=>'Greater Kailash 2',
+             'Chittaranjan Park'=>'Chittaranjan Park',
+             'Kalkaji'=>'Kalkaji',
+             'Govind Puri'=>'Govind Puri',
+             'Alaknanda'=>'Alaknanda'
             );?>
           <div class="row">
             <div class="col-xs-4"></div>

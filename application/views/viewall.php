@@ -7,6 +7,83 @@
 <body>
 
   <?php $this->view('topbar'); ?>
+  
+  <div class="row view-all">
+  <?php echo form_open('home/submit') ?>
+   <div class="col-xs-3">
+    <div class="form-group has-success has-feedback">
+              <?php
+              $gradelist=array(                   
+                 'choose'=>'All Grades',           
+                 '9'=>'9',
+                 '10'=>'10',
+                 '11'=>'11',
+                 '12'=>'12'
+                );
+              ?>
+              <?php echo form_dropdown('grade',$gradelist,'choose',array(
+              'class'=>'form-control my-control',
+              'id'=>'grade',
+                )); ?>
+            </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-group has-success has-feedback">
+              <?php
+              $options=array(                   
+                 'choose'=>'All Subjects',           
+                 'English'=>'English',
+                 'Hindi'=>'Hindi',
+                 'Science'=>'Science',
+                 'Maths'=>'Maths',
+                 'SST'=>'SST',
+                  "Physics"=>"Physics",
+                  "Chemistry" => "Chemistry",
+                  "Biology"=>"Biology",
+                  "Bussiness Studies"=>"Bussiness Studies",
+                  "Accounts"=>"Accounts",
+                  "Economics"=>"Economics",
+                  "Legal Studies"=>"Legal Studies",
+                  "Political Science"=>"Political Science",
+                  "History"=>"History",
+                  "Psycology"=>"Psycology"
+                );
+              ?>
+            <?php echo form_dropdown('subject',$options,'choose',array(
+              'class'=>'form-control my-control',
+              'id'=>'subjectselection'
+              ));?>
+            </div>
+    </div>
+    <div class="col-xs-3">
+    <div class="form-group has-success has-feedback">
+             <?php 
+             $categoryoptions= array(
+              'choose'=>'All Categories',
+              'Online'=>'Online',
+              'Group'=>'Group',
+              'Individual'=>'Individual',
+              'Coaching'=>'Coaching'
+             );
+            ?>
+
+              <?php echo form_dropdown('category',$categoryoptions,'choose',array(
+                'class'=>'form-control my-control',
+                'id'=>'categorymenu'
+                ));?>
+          </div>
+    </div>
+    <div class="col-xs-3">
+              <?php echo form_open('home/submit');?>
+              <button class="time-go" type="submit" name="subm" id="submitbut">Go</button>
+            </div>
+  </div>
+
+<div class="row view-all">
+<div class="col-xs- 12">
+<p>Your Tags - <span class="label label-success"><?php echo $data[0]['class']?></span> <span class="glyphicon glyphicon-chevron-right"></span> <span class="label label-success"><?php echo $data[0]['subjects']?></span> <span class="glyphicon glyphicon-chevron-right"></span> <span class="label label-success"><?php echo $data[0]['category']?></span> <span class="glyphicon glyphicon-chevron-right"></span> <span class="label label-success"><?php echo $data[0]['location']?></span></p>
+</div>
+</div> 
 
   <div class="container-fluid view-all">
     <?php for($i=0,$count = count($data);$i<$count;$i++):
@@ -54,11 +131,11 @@
             </div>
             <div class= "col-xs-5">
             <p>Target : <?php echo $data[$i]['target']?></p>
-            <p>Location : <?php echo $data[$i]['location']?></p>
+            <p> <?php echo $data[$i]['experience'] ?> years Experience</p>
             <p>Category : <?php echo $data[$i]['category']?></p>
             </div>
             <div class="col-xs-2">
-            <p> <?php echo $data[$i]['experience'] ?> years Experience</p>
+            <p>Location : <?php echo $data[$i]['location']?></p>
             </div>
           </a>
       </div>

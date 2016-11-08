@@ -4,12 +4,16 @@ class Registerform extends CI_Controller
 	public function index()
 	{
 		$name= $this->input->post('name');
+		$mail = $this->input->post('mail');
+		$contact = $this->input->post('contact');
 		$tutorid=$this->input->post('tutorid');
 		$name=strtoupper($name);
 		//adding info to registration database
 		$this->db->insert('registrations',array(
              'tid' =>$tutorid,
-             'name'=>$name
+             'name'=>$name,
+             'mail'=>$mail,
+             'contact'=>$contact
 			));
 		//incrementing popularity of tutor by 1
 		$this->db->query("

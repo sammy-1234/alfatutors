@@ -10,6 +10,20 @@
 
   <div class="top-clear"></div>
 
+<div class="row">
+<div class="col-xs-1 hidden-xs">
+       <a> <span class="glyphicon glyphicon-chevron-left view-go" onclick="goBack()"></span></a>
+</div>
+</div>
+
+<script>
+function goBack()
+{
+  window.history.back();
+}
+</script>
+
+
   <div class="container-fluid view-ind">
     <div class="row">
       <div class="col-xs-12">
@@ -106,25 +120,51 @@
               <h4 class="modal-title">REGISTER</h4>
             </div>
     <div class="modal-body">
-    <?php echo form_open('registerform')?>
-    <div class="row">
-    <div class="col-xs-4"></div>
-    <div class="col-xs-4">
-    <label for="timeselection"><h3><b>NAME:</b></h3></label>
-    <div class="form-group has-success">
-    <?php echo form_input('name','',array(
-    'class'=>"form-control"
-    ));
-    echo form_hidden('tutorid',$tutor[0]["id"]);
-    ?>
-    </div>
-    </div>
-    </div>
-    <p><center>register for:</center></p>
-    <p><center><strong><?php echo $tutor[0]['name']?></strong></center></p>
-    <br><br>
-    <p><i>Thank you for your registration!</p>
-    <?php echo form_submit('subm','Submit')?>
+      <?php echo form_open('submitreview')?>
+      <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <label for="timeselection"><h2>Name:</h2></label>
+          <div class="form-group has-success">
+            <?php echo form_input('name','',array(
+            'class'=>"form-control"
+            ));
+            echo form_hidden('tutorid',$tutor[0]["id"]);
+            ?>
+          </div>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <label for="timeselection"><h2>E-Mail ID:</h2></label>
+          <div class="form-group has-success">
+            <?php echo form_input('mail','',array(
+            'class'=>"form-control"
+            ));
+            echo form_hidden('tutorid',$tutor[0]["id"]);
+            ?>
+          </div>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <label for="timeselection"><h2>Contact Number:</h2></label>
+          <div class="form-group has-success">
+            <?php echo form_input('contact_num','',array(
+            'class'=>"form-control"
+            ));
+            echo form_hidden('tutorid',$tutor[0]["id"]);
+            ?>
+          </div>
+        </div>
+      </div>
+      <p><center>register for:</center></p>
+      <p><center><strong><?php echo $tutor[0]['name']?></strong></center></p>
+      <br><br>
+      <p><i>Thank you for your registration!</p>
+      <?php echo form_submit('subm','Submit')?>
     </div>
     </div>
     </div>

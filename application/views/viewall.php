@@ -8,6 +8,8 @@
 
   <?php $this->view('topbar'); ?>
   <div class="top-clear"></div>
+
+
   <div class="row view-all">
   <?php echo form_open('home/submit') ?>
    <div class="col-md-3 col-xs-6">
@@ -79,6 +81,12 @@
             </div>
   </div>
 
+ <div class="row view-all">
+    <p>Finding quality tutors is tough, and we at Alfa Tutors know that. That's why we bring you the best list of tutors for <?php echo $data[0]['subjects'] ?> around <?php echo $data[0]['location'] ?>. With over 720 tutors listed, we have verified tutors with real student reviews.</p>
+    <p>With tutors for every type of target, be it IIT-JEE, SAT, MAT, English, CBSE - Alfa Tutors provides you the complete information about tutors around <?php echo $data[0]['location'] ?>.</p>
+    <p>Currently, we have <?php echo count($data) ?> tutors for your requirement.</p>
+  </div>
+  
   <div class="row view-all">
     <div class="col-xs-12">
         <span class="label label-success black-back"><?php echo $data[0]['class']?></span>
@@ -90,6 +98,7 @@
         <span class="label label-success black-back"><?php echo $data[0]['location']?></span>
     </div>
   </div>
+
 
   <div class="container-fluid view-all">
     <?php for($i=0,$count = count($data);$i<$count;$i++):
@@ -205,12 +214,6 @@
 
     </div>
     <?php endfor?>
-  </div>
-
-  <div class="row view-all">
-    <p>Finding quality tutors is tough, and we at Alfa Tutors know that. That's why we bring you the best list of tutors for <?php echo $data[0]['subjects'] ?> around <?php echo $data[0]['location'] ?>. With over 720 tutors listed, we have verified tutors with real student reviews.</p>
-    <p>With tutors for every type of target, be it IIT-JEE, SAT, MAT, English, CBSE - Alfa Tutors provides you the complete information about tutors around <?php echo $data[0]['location'] ?>.</p>
-    <p>Currently, we have <?php echo count($data) ?> tutors for your requirement.</p>
   </div>
 
   <?php $this->view('footer') ?>

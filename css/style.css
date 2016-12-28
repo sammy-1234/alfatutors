@@ -13,6 +13,13 @@ a {
   cursor: pointer;
 }
 
+.theme-back-1 {
+  background: #2c3e50;
+}
+
+.black-back {
+  background: #000;
+}
 
 /* Hero */
 #section4 h4 {
@@ -34,6 +41,7 @@ a {
  padding: 120px 50px 50px 50px;
  background: url('/images/hero.png') no-repeat center fixed;
  background-size: cover;
+ height: 100vh;
 }
 
 
@@ -337,6 +345,11 @@ footer {
 /* -------- */
 /* Page 2 */
 
+.top-clear {
+  height: 80px;
+  width: 100%;
+}
+
 .view-img {
   opacity: 0.7;
 }
@@ -349,36 +362,70 @@ footer {
   font-family: 'Montserrat', sans-serif;
 }
 
-.view-item {
-  border-bottom: 1px solid #000;
-  font-family: 'Montserrat', sans-serif;
-  margin: 30px 0 0 0;
+.view-href:hover .view-header {
+  color: #2c3e50;
+}
+
+.view-href:hover .view-go {
+  margin-right: -10px;
 }
 
 .view-href:hover {
-  color: #000;
+  color: inherit;
+}
+
+.view-item {
+  border-bottom: 1px solid #000;
+  font-family: 'Montserrat', sans-serif;
+  margin: 25px 0;
+}
+
+.view-score {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
 }
 
 .view-href {
   text-decoration: none;
 }
 
-.view-row {
-  background: #bdc3c7;
-}
-
-.view-href:hover .view-img {
-  opacity: 1;
-}
-
 .view-all, .view-ind {
   max-width: 900px;
   padding: 0 0;
-  margin: 90px auto;
+  margin: 10px auto;
 }
 
 .view-all .row {
   margin: 0;
+}
+
+.view-row {
+  background: #bdc3c7;
+  padding-top: 5px;
+  margin-top: 10px !important;
+}
+
+.label, .badge {
+  margin: 0 5px;
+}
+
+.view-go {
+  float: right;
+  font-size: 20px;
+  transition: all 0.1s ease-in;
+}
+
+/*Adding scroller to dropdowns*/
+.form-group .my-control {
+  max-height: 60px;
+  overflow: auto;
+  background-color: #FFF;
+  color: #18BC9C;
+}
+
+.form-group .my-control:hover{
+  background-color: #FFF;
+  color: #2c3e50;
 }
 
 /* View Indivisual */
